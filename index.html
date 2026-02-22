@@ -19,8 +19,8 @@
 
         body {
             font-family: 'Montserrat', sans-serif;
-            background-color: #0f0f0f;  /* Глубокий черный */
-            color: #e5e5e5;  /* Светлый текст */
+            background-color: #fcf9f7;  /* Теплый светлый фон */
+            color: #2c2c2c;  /* Темный текст */
             line-height: 1.6;
             scroll-behavior: smooth;
         }
@@ -38,17 +38,16 @@
         }
 
         .accent {
-            color: #c7a97c;  /* Теплый золотистый акцент */
+            color: #b59d7e;  /* Благородный бежевый */
         }
 
-        /* Навигация */
         .navbar {
             padding: 30px 0;
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            border-bottom: 1px solid rgba(255,255,255,0.08);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
         }
 
         .logo {
@@ -57,11 +56,11 @@
             letter-spacing: 2px;
             text-transform: uppercase;
             font-family: 'Cormorant Garamond', serif;
-            color: #ffffff;
+            color: #2c2c2c;
         }
 
         .logo span {
-            color: #c7a97c;
+            color: #b59d7e;
             font-weight: 600;
         }
 
@@ -72,7 +71,7 @@
 
         .nav-links a {
             text-decoration: none;
-            color: #e0e0e0;
+            color: #2c2c2c;
             font-weight: 400;
             font-size: 0.95rem;
             text-transform: uppercase;
@@ -88,19 +87,18 @@
             left: 0;
             width: 0;
             height: 1px;
-            background: #c7a97c;
+            background: #b59d7e;
             transition: width 0.3s;
         }
 
         .nav-links a:hover {
-            color: #c7a97c;
+            color: #b59d7e;
         }
 
         .nav-links a:hover::after {
             width: 100%;
         }
 
-        /* Hero секция */
         .hero {
             display: flex;
             align-items: center;
@@ -120,31 +118,30 @@
             font-weight: 500;
             line-height: 1.1;
             margin-bottom: 30px;
-            color: #ffffff;
+            color: #2c2c2c;
         }
 
         .hero-content p {
             font-size: 1.2rem;
-            color: #b0b0b0;
+            color: #5a5a5a;
             max-width: 500px;
             font-weight: 300;
-            border-left: 2px solid #c7a97c;
+            border-left: 2px solid #b59d7e;
             padding-left: 30px;
         }
 
         .hero-image {
             flex: 1 1 500px;
             height: 650px;
-            background: linear-gradient(145deg, #2a2a2a 0%, #1a1a1a 100%);
+            background: linear-gradient(145deg, #e9e0d9 0%, #d6c9bf 100%);
             background-image: url('images/hero.jpg');
             background-size: cover;
             background-position: center;
             border-radius: 40% 60% 30% 70% / 50% 40% 60% 50%;
-            box-shadow: 0 30px 40px -20px rgba(0,0,0,0.8);
-            border: 1px solid rgba(255,255,255,0.05);
+            box-shadow: 0 30px 40px -20px rgba(0,0,0,0.2);
+            border: 1px solid rgba(255,255,255,0.6);
         }
 
-        /* Портфолио */
         .portfolio {
             margin: 120px 0;
         }
@@ -154,16 +151,16 @@
             font-weight: 500;
             margin-bottom: 20px;
             font-family: 'Cormorant Garamond', serif;
-            color: #ffffff;
+            color: #2c2c2c;
         }
 
         .section-title span {
-            border-bottom: 2px solid #c7a97c;
+            border-bottom: 2px solid #b59d7e;
             padding-bottom: 5px;
         }
 
         .section-subtitle {
-            color: #9a9a9a;
+            color: #7a7a7a;
             margin-bottom: 60px;
             font-size: 1.1rem;
             max-width: 600px;
@@ -181,7 +178,8 @@
             border-radius: 24px;
             aspect-ratio: 4/5;
             cursor: pointer;
-            border: 1px solid rgba(255,255,255,0.05);
+            box-shadow: 0 15px 30px -10px rgba(0,0,0,0.1);
+            border: 1px solid rgba(255,255,255,0.6);
         }
 
         .portfolio-item img {
@@ -190,12 +188,10 @@
             object-fit: cover;
             transition: transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
             display: block;
-            filter: brightness(0.95);
         }
 
         .portfolio-item:hover img {
             transform: scale(1.08);
-            filter: brightness(1.05);
         }
 
         .portfolio-overlay {
@@ -203,7 +199,7 @@
             bottom: 0;
             left: 0;
             right: 0;
-            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            background: linear-gradient(to top, rgba(0,0,0,0.4), transparent);
             color: white;
             padding: 30px 20px 20px;
             transform: translateY(100%);
@@ -219,37 +215,39 @@
             font-size: 1.8rem;
             margin-bottom: 5px;
             font-weight: 500;
+            color: #ffffff;
         }
 
         .portfolio-overlay p {
             font-size: 0.9rem;
             opacity: 0.9;
             font-family: 'Montserrat', sans-serif;
+            color: #f0f0f0;
         }
 
-        /* Философия */
         .philosophy {
             display: flex;
             align-items: center;
             gap: 80px;
             margin: 120px 0;
             flex-wrap: wrap;
-            background: #121212;
+            background: #ffffff;
             padding: 60px;
             border-radius: 40px;
-            border: 1px solid rgba(255,255,255,0.03);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.02);
+            border: 1px solid rgba(255,255,255,0.8);
         }
 
         .philosophy-image {
             flex: 1 1 300px;
             height: 500px;
-            background: linear-gradient(145deg, #2a2a2a 0%, #1a1a1a 100%);
+            background: linear-gradient(145deg, #e9e0d9 0%, #d6c9bf 100%);
             background-image: url('images/about.jpg');
             background-size: cover;
             background-position: center;
             border-radius: 30% 70% 40% 60% / 30% 40% 60% 70%;
-            border: 1px solid rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.6);
+            box-shadow: 0 20px 30px -10px rgba(0,0,0,0.1);
         }
 
         .philosophy-content {
@@ -259,12 +257,12 @@
         .philosophy-content h2 {
             font-size: 3rem;
             margin-bottom: 30px;
-            color: #ffffff;
+            color: #2c2c2c;
         }
 
         .philosophy-content p {
             margin-bottom: 20px;
-            color: #b0b0b0;
+            color: #4a4a4a;
             font-size: 1.1rem;
             font-weight: 300;
         }
@@ -273,10 +271,9 @@
             font-family: 'Cormorant Garamond', serif;
             font-size: 1.8rem;
             margin-top: 40px;
-            color: #c7a97c;
+            color: #b59d7e;
         }
 
-        /* Социальные ссылки */
         .social-links {
             display: flex;
             justify-content: center;
@@ -285,47 +282,47 @@
         }
 
         .social-links a {
-            color: #e0e0e0;
+            color: #2c2c2c;
             font-size: 1.5rem;
             width: 60px;
             height: 60px;
-            background: #1a1a1a;
+            background: #ffffff;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             transition: all 0.3s;
-            border: 1px solid #333;
+            border: 1px solid #e0d9d2;
             text-decoration: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }
 
         .social-links a:hover {
-            background: #c7a97c;
-            border-color: #c7a97c;
-            color: #0f0f0f;
+            background: #b59d7e;
+            border-color: #b59d7e;
+            color: white;
             transform: translateY(-5px);
         }
 
-        /* Контакты */
         .contact-block {
             text-align: center;
             max-width: 500px;
             margin: 0 auto 80px;
             padding: 40px;
-            background: #121212;
+            background: #ffffff;
             border-radius: 30px;
-            border: 1px solid #2a2a2a;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border: 1px solid rgba(255,255,255,0.8);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
         }
 
         .contact-block p {
             margin: 15px 0;
-            color: #c0c0c0;
+            color: #5a5a5a;
             font-size: 1.1rem;
         }
 
         .contact-block i {
-            color: #c7a97c;
+            color: #b59d7e;
             margin-right: 10px;
             width: 20px;
         }
@@ -334,8 +331,8 @@
             display: inline-block;
             margin-top: 20px;
             padding: 12px 40px;
-            border: 1px solid #c7a97c;
-            color: #c7a97c;
+            border: 1px solid #b59d7e;
+            color: #b59d7e;
             text-decoration: none;
             border-radius: 50px;
             transition: all 0.3s;
@@ -344,20 +341,18 @@
         }
 
         .contact-email:hover {
-            background: #c7a97c;
-            color: #0f0f0f;
+            background: #b59d7e;
+            color: white;
         }
 
-        /* Футер */
         .footer {
             text-align: center;
             padding: 40px 0;
-            border-top: 1px solid #2a2a2a;
+            border-top: 1px solid #e0d9d2;
             color: #7a7a7a;
             font-size: 0.9rem;
         }
 
-        /* ===== МОДАЛЬНОЕ ОКНО (ГАЛЕРЕЯ) ===== */
         .modal {
             display: none;
             position: fixed;
@@ -366,7 +361,7 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.95);
+            background-color: rgba(255, 255, 255, 0.95);
             overflow: hidden;
         }
 
@@ -394,11 +389,11 @@
             max-height: 100%;
             object-fit: contain;
             border-radius: 8px;
-            border: 1px solid rgba(255,255,255,0.1);
+            border: 1px solid rgba(0,0,0,0.1);
         }
 
         .modal-caption {
-            color: #c7a97c;
+            color: #b59d7e;
             text-align: center;
             padding: 20px 0;
             font-family: 'Cormorant Garamond', serif;
@@ -409,7 +404,7 @@
             position: absolute;
             top: 20px;
             right: 35px;
-            color: #c7a97c;
+            color: #b59d7e;
             font-size: 40px;
             font-weight: bold;
             cursor: pointer;
@@ -418,7 +413,7 @@
         }
 
         .close-modal:hover {
-            color: white;
+            color: #2c2c2c;
         }
 
         .modal-nav {
@@ -433,9 +428,9 @@
         }
 
         .modal-prev, .modal-next {
-            background: rgba(199, 169, 124, 0.2);
-            color: #c7a97c;
-            border: 1px solid #c7a97c;
+            background: rgba(181, 157, 126, 0.2);
+            color: #b59d7e;
+            border: 1px solid #b59d7e;
             width: 50px;
             height: 50px;
             border-radius: 50%;
@@ -448,8 +443,8 @@
         }
 
         .modal-prev:hover, .modal-next:hover {
-            background: #c7a97c;
-            color: #0f0f0f;
+            background: #b59d7e;
+            color: white;
         }
 
         .modal-counter {
@@ -457,16 +452,15 @@
             bottom: 10px;
             left: 50%;
             transform: translateX(-50%);
-            color: #c7a97c;
+            color: #b59d7e;
             font-size: 1rem;
-            background: rgba(0,0,0,0.7);
+            background: rgba(255,255,255,0.9);
             padding: 5px 15px;
             border-radius: 20px;
             z-index: 1001;
-            border: 1px solid #c7a97c;
+            border: 1px solid #b59d7e;
         }
 
-        /* Адаптивность */
         @media (max-width: 1024px) {
             .portfolio-grid {
                 grid-template-columns: repeat(2, 1fr);
@@ -523,7 +517,6 @@
 </head>
 <body>
 
-    <!-- Навигация -->
     <div class="container">
         <nav class="navbar">
             <div class="logo">ДАРЬЯ <span>ШМАКОВА</span></div>
@@ -535,7 +528,6 @@
         </nav>
     </div>
 
-    <!-- Hero секция -->
     <div class="container">
         <section class="hero">
             <div class="hero-content">
@@ -546,14 +538,12 @@
         </section>
     </div>
 
-    <!-- Портфолио с твоими проектами -->
     <div class="container" id="portfolio">
         <section class="portfolio">
             <h2 class="section-title"><span>Избранные проекты</span></h2>
             <div class="section-subtitle">Каждый проект — это история, рассказанная через материалы, свет и формы</div>
             
             <div class="portfolio-grid">
-                <!-- Проект 1: Noir Aesthetic -->
                 <div class="portfolio-item" data-project="project1">
                     <img src="images/project1/1.jpg" alt="Noir Aesthetic" loading="lazy">
                     <div class="portfolio-overlay">
@@ -562,7 +552,6 @@
                     </div>
                 </div>
                 
-                <!-- Проект 2: Basalt&Cedar -->
                 <div class="portfolio-item" data-project="project2">
                     <img src="images/project2/1.jpg" alt="Basalt&Cedar" loading="lazy">
                     <div class="portfolio-overlay">
@@ -571,7 +560,6 @@
                     </div>
                 </div>
                 
-                <!-- Проект 3: White Classic -->
                 <div class="portfolio-item" data-project="project3">
                     <img src="images/project3/1.jpg" alt="White Classic" loading="lazy">
                     <div class="portfolio-overlay">
@@ -580,7 +568,6 @@
                     </div>
                 </div>
                 
-                <!-- Проект 4: Wildwood Retreat -->
                 <div class="portfolio-item" data-project="project4">
                     <img src="images/project4/1.jpg" alt="Wildwood Retreat" loading="lazy">
                     <div class="portfolio-overlay">
@@ -589,7 +576,6 @@
                     </div>
                 </div>
                 
-                <!-- Проект 5: Работа России - центр -->
                 <div class="portfolio-item" data-project="project5">
                     <img src="images/project5/1.jpg" alt="Работа России - центр" loading="lazy">
                     <div class="portfolio-overlay">
@@ -598,7 +584,6 @@
                     </div>
                 </div>
                 
-                <!-- Проект 6: Loft Dream -->
                 <div class="portfolio-item" data-project="project6">
                     <img src="images/project6/1.jpg" alt="Loft Dream" loading="lazy">
                     <div class="portfolio-overlay">
@@ -610,7 +595,6 @@
         </section>
     </div>
 
-    <!-- Философия / Обо мне -->
     <div class="container" id="philosophy">
         <section class="philosophy">
             <div class="philosophy-image"></div>
@@ -623,7 +607,6 @@
         </section>
     </div>
 
-    <!-- Контакты -->
     <div class="container" id="contact">
         <h2 class="section-title" style="text-align: center;"><span>Связаться для проекта</span></h2>
         
@@ -631,11 +614,9 @@
             <p><i class="fas fa-phone-alt accent"></i> +7 (904) 422-50-04</p>
             <p><i class="fas fa-envelope accent"></i> da.shmakovaa@mail.ru</p>
             <p><i class="fas fa-map-marker-alt accent"></i> Волгоград / Работаю удаленно</p>
-            
             <a href="mailto:da.shmakovaa@mail.ru" class="contact-email">Написать на почту</a>
         </div>
 
-        <!-- Социальные сети -->
         <div class="social-links">
             <a href="https://pin.it/5fql1FMDR" target="_blank"><i class="fab fa-pinterest-p"></i></a>
             <a href="https://www.instagram.com/da.shmakovaa?igsh=MzZmZjh4OG41ZmJz" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -648,14 +629,12 @@
         </p>
     </div>
 
-    <!-- Футер -->
     <footer class="footer">
         <div class="container">
             <p>© 2026 Дарья Шмакова — дизайн интерьеров. Все права защищены.</p>
         </div>
     </footer>
 
-    <!-- ===== МОДАЛЬНОЕ ОКНО (ГАЛЕРЕЯ) ===== -->
     <div id="galleryModal" class="modal">
         <span class="close-modal">&times;</span>
         
@@ -674,43 +653,16 @@
         <div class="modal-counter" id="modalCounter"></div>
     </div>
 
-    <!-- ===== СКРИПТ ДЛЯ ГАЛЕРЕИ ===== -->
     <script>
-        // Данные о проектах
         const projectData = {
-            project1: {
-                title: "Noir Aesthetic",
-                location: "Студия 40 м² · Волгоград",
-                photoCount: 4
-            },
-            project2: {
-                title: "Basalt&Cedar",
-                location: "Ванная для квартиры 70 м² · Москва",
-                photoCount: 4
-            },
-            project3: {
-                title: "White Classic",
-                location: "Квартира 52 м² · Волгоград",
-                photoCount: 2
-            },
-            project4: {
-                title: "Wildwood Retreat",
-                location: "Дом 63 м² · Подмосковье",
-                photoCount: 1
-            },
-            project5: {
-                title: "Работа России - центр",
-                location: "Центр занятости 200 м² · Черный Яр",
-                photoCount: 3
-            },
-            project6: {
-                title: "Loft Dream",
-                location: "Студия 37 м² · Волгоград",
-                photoCount: 2
-            }
+            project1: { title: "Noir Aesthetic", location: "Студия 40 м² · Волгоград", photoCount: 4 },
+            project2: { title: "Basalt&Cedar", location: "Ванная для квартиры 70 м² · Москва", photoCount: 4 },
+            project3: { title: "White Classic", location: "Квартира 52 м² · Волгоград", photoCount: 2 },
+            project4: { title: "Wildwood Retreat", location: "Дом 63 м² · Подмосковье", photoCount: 1 },
+            project5: { title: "Работа России - центр", location: "Центр занятости 200 м² · Черный Яр", photoCount: 3 },
+            project6: { title: "Loft Dream", location: "Студия 37 м² · Волгоград", photoCount: 2 }
         };
 
-        // Переменные для модального окна
         const modal = document.getElementById('galleryModal');
         const modalImage = document.getElementById('modalImage');
         const modalCaption = document.getElementById('modalCaption');
@@ -722,11 +674,9 @@
         let currentProject = null;
         let currentPhotoIndex = 1;
 
-        // Открытие модального окна
         document.querySelectorAll('.portfolio-item').forEach(item => {
             item.addEventListener('click', function() {
-                const projectId = this.dataset.project;
-                currentProject = projectId;
+                currentProject = this.dataset.project;
                 currentPhotoIndex = 1;
                 updateModalImage();
                 modal.style.display = 'block';
@@ -734,22 +684,16 @@
             });
         });
 
-        // Обновление изображения
         function updateModalImage() {
             if (!currentProject) return;
-            
             const project = projectData[currentProject];
-            const imagePath = `images/${currentProject}/${currentPhotoIndex}.jpg`;
-            
-            modalImage.src = imagePath;
+            modalImage.src = `images/${currentProject}/${currentPhotoIndex}.jpg`;
             modalCaption.innerHTML = `${project.title} · ${project.location}`;
             modalCounter.innerHTML = `${currentPhotoIndex} из ${project.photoCount}`;
         }
 
-        // Кнопки навигации
         nextBtn.addEventListener('click', function() {
             if (!currentProject) return;
-            
             const maxPhotos = projectData[currentProject].photoCount;
             if (currentPhotoIndex < maxPhotos) {
                 currentPhotoIndex++;
@@ -759,14 +703,12 @@
 
         prevBtn.addEventListener('click', function() {
             if (!currentProject) return;
-            
             if (currentPhotoIndex > 1) {
                 currentPhotoIndex--;
                 updateModalImage();
             }
         });
 
-        // Закрытие
         closeBtn.addEventListener('click', function() {
             modal.style.display = 'none';
             document.body.style.overflow = 'auto';
@@ -779,19 +721,13 @@
             }
         });
 
-        // Клавиши
         document.addEventListener('keydown', function(e) {
             if (modal.style.display === 'block') {
-                if (e.key === 'ArrowRight') {
-                    nextBtn.click();
-                } else if (e.key === 'ArrowLeft') {
-                    prevBtn.click();
-                } else if (e.key === 'Escape') {
-                    closeBtn.click();
-                }
+                if (e.key === 'ArrowRight') nextBtn.click();
+                else if (e.key === 'ArrowLeft') prevBtn.click();
+                else if (e.key === 'Escape') closeBtn.click();
             }
         });
     </script>
-
 </body>
 </html>
